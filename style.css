@@ -16,30 +16,177 @@
   box-sizing: border-box;
 }
 
-body {
-  display: block;
+
+.social-proof.container {
+  background: var(--white);
+  background-image:
+    url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg")
+  ;
+  background-repeat: no-repeat no-repeat;
+  background-position: top left, bottom right;
+
   font-size: 15px;
   font-family: 'Spartan', sans-serif;
-  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, bottom right;
-  height: 100vh;
+
+  min-width: 375px;
+  max-width: 1440px;
+
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  padding: 20px;
+
 }
 
-.container {
+/* Header Container */
+.header-container h1{
+  width: 250px;
+}
+
+.header-container p{
+  word-wrap: break-word;
+  width: 350px;
+  font-size: 11px;
+  color: var(--dark-gray-magenta);
+}
+
+/* Font Color */
+.heading-1 {
+  color: var(--dark-magenta);
+}
+
+.review-list {
+  background-color: var(--light-gray-magenta);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  margin: 7px 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10%;
+  align-self: center;
+  text-align: left;
+  height: 7vh;
+
+
+
+  color: var(--dark-magenta);
 }
 
-.text-container {
-  text-align: center;
-  margin: 5px 0;
+
+
+/* Next step is to change the size of the star */
+#rate-review {
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 18px;
 }
 
-.text-container .header-1 {
-  color: var(--dark-gray-magenta);
-  font-weight: 700;
-  font-size: 35px;
+.icon-star img {
+  height: 10px;
+  width: 10px;
+}
+
+/* Here is the profile card */
+.photo-card {
+  background: var(--dark-magenta);
+  border: 7px solid var(--white);
+  border-radius: 15px;
+
+  height: 180px;
+  width: 300px;
+}
+
+.card-container {
+  padding: 20px;
+}
+
+.customer-feedback {
+  padding: 10px;
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.profile-image {
+  border-radius: 50%;
+
+  height: 30px;
+  width: 30px;
+
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.fullname {
+  color: var(--light-gray-magenta);
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+.verification {
+  color: var(--soft-pink);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.profile-name {
+  margin-top: -32px;
+  margin-left: 60px;
+}
+
+.profile-title {
+  margin-bottom: 10px;
+}
+
+/* Arrange all column */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  width: 100%;
+
+  /* margin: 10px auto; */
+}
+
+/* Responsive Web */
+@media only screen and (min-width: 731px) {
+  /* For tablets: */
+
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 1441px) {
+  /* For desktop: */
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
