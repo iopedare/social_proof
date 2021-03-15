@@ -1,192 +1,244 @@
 :root {
-
   /* Primary */
   --dark-magenta: hsl(300, 43%, 22%);
   --soft-pink: hsl(333, 80%, 67%);
-
   /* Neutral */
   --dark-gray-magenta: hsl(303, 10%, 53%);
   --light-gray-magenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+body {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
 
-
-.social-proof.container {
-  background: var(--white);
   background-image:
-    url("images/bg-pattern-top-desktop.svg"),
-    url("images/bg-pattern-bottom-desktop.svg")
+    url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg")
   ;
   background-repeat: no-repeat no-repeat;
-  background-position: top left, bottom right;
-
-  font-size: 15px;
-  font-family: 'Spartan', sans-serif;
-
-  min-width: 375px;
-  max-width: 1440px;
-
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-
-  padding: 20px;
-
+  background-position: left top, right bottom 10vh;
 }
 
-/* Header Container */
-.header-container h1{
-  width: 250px;
+#content {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 275px;
 }
 
-.header-container p{
-  word-wrap: break-word;
-  width: 350px;
-  font-size: 11px;
+#first h1 {
+  color: var(--dark-magenta);
+  font-size: 20px;
+  margin: 15px;
+}
+
+#first p {
   color: var(--dark-gray-magenta);
-}
-
-/* Font Color */
-.heading-1 {
-  color: var(--dark-magenta);
-}
-
-.review-list {
-  background-color: var(--light-gray-magenta);
-  border: 1px solid var(--white);
-  border-radius: 10px;
-  margin: 7px 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  text-align: left;
-  height: 7vh;
-
-
-
-  color: var(--dark-magenta);
-}
-
-
-
-/* Next step is to change the size of the star */
-#rate-review {
   font-size: 10px;
-  font-weight: bold;
-  margin-left: 18px;
-}
-
-.icon-star img {
-  height: 10px;
-  width: 10px;
-}
-
-/* Here is the profile card */
-.photo-card {
-  background: var(--dark-magenta);
-  border: 7px solid var(--white);
-  border-radius: 15px;
-
-  height: 180px;
-  width: 300px;
-}
-
-.card-container {
-  padding: 20px;
-}
-
-.customer-feedback {
-  padding: 10px;
-  color: var(--white);
-  font-size: 11px;
   font-weight: 500;
+  margin: 21px;
 }
 
-.profile-image {
-  border-radius: 50%;
-
-  height: 30px;
-  width: 30px;
-
-  margin-top: 13px;
-  margin-left: 10px;
+#second {
+  margin-bottom: 30px;
 }
 
-.fullname {
+#second img {
+  height: 10px;
+}
+
+#second .rate-review {
+  font-weight: 700;
+  color: var(--dark-magenta);
+}
+
+#second .star {
+  background: var(--light-gray-magenta);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#second .rate-review {
+  font-size: 10px;
+}
+
+#third {
+  margin: 15px;
+}
+
+#third .profile {
+  background: var(--dark-magenta);
+  border-radius: 7px;
+
   color: var(--light-gray-magenta);
-  font-size: 11px;
-  margin-bottom: 3px;
+}
+
+#third img {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#third .profile {
+  text-align: left;
+}
+
+#third .profile-description {
+  margin-left: 55px;
+  margin-top: -37px;
+}
+
+.username {
+  font-size: 9px;
 }
 
 .verification {
+  font-size: 9px;
   color: var(--soft-pink);
-  font-size: 11px;
-  font-weight: 500;
+  margin-top: -8px;
 }
 
-.profile-name {
-  margin-top: -32px;
-  margin-left: 60px;
+.customer-feedback {
+  font-size: 9px;
+  padding: 20px;
+  margin-top: -10px
 }
 
-.profile-title {
-  margin-bottom: 10px;
-}
-
-/* Arrange all column */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 5px;
-  width: 100%;
-
-  /* margin: 10px auto; */
-}
-
-/* Responsive Web */
-@media only screen and (min-width: 731px) {
-  /* For tablets: */
 
 
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 1441px) {
-  /* For desktop: */
+@media screen and (min-width:760px) {
+  body {
+    text-align: left;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
 
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+    background-image:
+      url("images/bg-pattern-top-desktop.svg"),
+      url("images/bg-pattern-bottom-desktop.svg")
+    ;
+    background-repeat: no-repeat no-repeat;
+    background-position: left top, right bottom 10vh;
+  }
+
+  #content {
+    margin: 0 auto;
+    min-width: 740px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 15px;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  #first h1 {
+    color: var(--dark-magenta);
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  #first p {
+    color: var(--dark-gray-magenta);
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+
+  #second {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 20px;
+    grid-gap: 30px
+  }
+
+
+  #second .rate-review {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  #second .star {
+    background: var(--light-gray-magenta);
+    border-radius: 10px;
+    margin: 7px;
+    padding: 20px;
+    display: inline-flex;
+  }
+
+  .star p {
+    margin-top: -5px;
+  }
+
+  .star-img {
+    margin-top: -8px;
+  }
+
+  .star.one {
+    grid-column: 1 / 11;
+  }
+
+  .star.two {
+    grid-column: 2 / 12;
+  }
+
+  .star.three {
+    grid-column: 3 / 13;
+  }
+
+  #third {
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    grid-gap: 20px;
+
+    height: 180px;
+    margin: 0;
+  }
+
+  #third img {
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  #third .profile-description {
+    margin-left: 75px;
+    margin-top: -50px;
+  }
+
+  .username {
+    font-size: 11px;
+  }
+
+  .verification {
+    font-size: 11px;
+  }
+
+  .customer-feedback {
+    font-size: 9px;
+    padding: 15px;
+  }
+
+  .profile-one {
+    align-self: start;
+  }
+
+  .profile-two {
+    align-self: center;
+  }
+
+  .profile-three {
+    align-self: end;
+  }
 }
